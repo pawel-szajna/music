@@ -218,7 +218,7 @@ basLyrics = \sopLyrics
 
 violinANotes = \relative c' {
 
-  r2. r r 
+  R2.*3
   g'8\pp as bes4 as8 bes 
   c2 bes4 
   f8 g as4 g8 as 
@@ -419,7 +419,7 @@ violaNotes = \relative c' {
 }
 
 violoncelloNotes = \relative c {
-  r2. r2. r2. r2. r2. r2. r2.
+  R2.*7
   as4\p c bes
 
   % Sanctus…

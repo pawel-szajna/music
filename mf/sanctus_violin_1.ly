@@ -4,7 +4,7 @@
 \include "common.ly"
 
 \score {
-  \new Staff { \set Staff.instrumentName = "Skrzypce I" \tempo "Molto allegro" \time 3/4 \key es \major \violinANotes }
+  \new Staff { \set Staff.instrumentName = "Skrzypce I" \compressFullBarRests \tempo "Molto allegro" \time 3/4 \key es \major \violinANotes }
   \layout { }
   %\midi { }
 
