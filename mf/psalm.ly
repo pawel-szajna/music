@@ -20,7 +20,7 @@ soloNotesZ = \relative c'' {
 
 organRHNotes = \relative c'' {
   <<{a8 <<bes g>>} \\ {f4}>> <<f\breve a c>> <<{bes8 c d4 c2} \\ {f,1}>>
-  <<{f'8 e c\breve} \\ {<<a4 f4>> <<a\breve f\breve>>}>> <<{c'1} \\ {<<a2 f>> <<g e>>}>>
+  <<{<< {f'8 e c\breve~c1} \\ {a4 a\breve a2 g} >>} \\ {f4~f\breve~f2 e}>>
   <<{f8 g a c bes a a\breve} \\ {<<f2. d>> <<d\breve f>>}>> <<{a4 g2} \\ {<<e2. c>>}>>
   <<{<<f\breve d>> f8 e d c bes4 a2} \\ {bes\breve~bes2 f2.}>>
 }
