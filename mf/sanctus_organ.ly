@@ -9,8 +9,8 @@
     } <<
       \set StaffGroup.systemStartDelimiter = #'SystemStartBar
       \new PianoStaff <<
-        \new Staff { \key es \major \organRHNotes }
-        \new Staff { \clef bass \key es \major \organLHNotes }
+        \new Staff = "up"   { \key es \major \organRHNotes }
+        \new Staff = "down" { \clef bass \key es \major \organLHNotes }
       >>
       \new Staff = "Pedal" <<
         \set Staff.instrumentName = "(Ped.)"

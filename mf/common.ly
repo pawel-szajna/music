@@ -2,7 +2,8 @@
 % Based on a choral template by Samuel Speer
 % http://samuelspeer.com/blog/2014/choral-scores-vii/
 
-#(set-global-staff-size 16.8)
+#(set-global-staff-size 18.5)
+%#(set-global-staff-size 16.8)
 
 \paper {
 

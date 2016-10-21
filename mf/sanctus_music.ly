@@ -54,7 +54,7 @@ sopNotes = \relative c' {
   }
   \alternative {
     { as2 g4 }
-    { as\p( f) es\fermata \bar "|." }
+    { as\p( f) es \bar "|." }
   }
 
 }
@@ -100,7 +100,7 @@ altNotes = \relative c' {
   f8\ff( as) f( es) d4
   es\mf es8 es d es
   f2 es4
-  es\p( d) es\fermata
+  es\p( d) es
 
 }
 
@@ -145,7 +145,7 @@ tenNotes = \relative c' {
   bes\ff bes as
   as\mf as8 as c c
   d2 bes4 
-  c\p( bes) g\fermata
+  c\p( bes) g
 
 }
 
@@ -190,7 +190,7 @@ basNotes = \relative c {
   bes\ff bes bes 
   as8\mf( bes) c c c c 
   bes4( d) es
-  as,\p( d) es\fermata
+  as,\p( d) es
 
 }
 
@@ -268,7 +268,7 @@ violinANotes = \relative c' {
   as4. bes8 as4
   g4.\mf as8 g4
   f8 es d es f4\<
-  g4 \tuplet 3/2 { g8 g g } b b
+  g4 \tuplet 3/2 { g8 g g } b b\!
 
   % Hosanna…
   \mark \default
@@ -279,7 +279,7 @@ violinANotes = \relative c' {
   }
   \alternative {
     { as4 \tuplet 3/2 { as8 as as } bes bes }
-    { as4 \tuplet 3/2 { d8 d d } es4\fermata }
+    { as4 \tuplet 3/2 { d8 d d } es4 }
   }
   \bar "|."
 }
@@ -336,8 +336,8 @@ violinBNotes = \relative c' {
   g2 g4~\>
   g f8 es f4~
   f\mf es8 d es4~
-  es4 d8 c d4
-  d \tuplet 3/2 { d8 d d } g g 
+  es4 d8 c d4\<
+  d \tuplet 3/2 { d8 d d } g g\!
 
   % Hosanna…
   \mark \default
@@ -348,7 +348,7 @@ violinBNotes = \relative c' {
   }
   \alternative {
     { f4 \tuplet 3/2 { f8 f f } g g }
-    { es4 \tuplet 3/2 { f8 f f } g4\fermata }
+    { es4 \tuplet 3/2 { f8 f f } g4 }
   }
   \bar "|."
 }
@@ -376,32 +376,44 @@ violaNotes = \relative c' {
 
   % Pleni…
   \bar "||" \mark \default
-  r2. r2. r2. r2. r2. r2. r2.
+  bes\p 
+  as8 bes c as g4 
+  bes2.~
+  bes4 c d 
+  c2.\f 
+  bes2\> as4~
+  as\mp\< g8 f e e
 
   % Hosanna…
   \mark \default
   \repeat volta 2 {
-    r2. r2. r2.
+    g4\fff \tuplet 3/2 {c8 c c} d d 
+    d4 \tuplet 3/2 {d8 d d} d d 
+    c4 \tuplet 3/2 {c8 c c} c c 
   }
   \alternative {
-    { r2. }
-    { r2. }
+    { d4 \tuplet 3/2 {d8 d d} bes bes }
+    { c4 \tuplet 3/2 {bes8 bes bes} g4\fermata }
   }
 
   % Benedictus…
   \bar "||" \mark \default
-  r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. 
+  es\pp\< g c 
+  bes2. 
+  b2 c4 
+  as2.\f 
+  <<{bes c bes\mf~bes b4 \tuplet 3/2 {b8 b b} g g} \\ {s2 s4\> s2. s2.\! s2 s4\< s2 s8 s8\! }>>
 
   % Hosanna…
   \mark \default
   \repeat volta 2 {
-    r2. r2. r2.
+    g4\fff \tuplet 3/2 {c8 c c} d d 
+    d4 \tuplet 3/2 {d8 d d} d d 
+    c4 \tuplet 3/2 {c8 c c} c c
   }
   \alternative {
-    { r2. }
-    { r2. }
+    { d4 \tuplet 3/2 {d8 d d} bes bes }
+    { c4 \tuplet 3/2 {bes8 bes bes} bes4 }
   }
   \bar "|."
 }
@@ -423,74 +435,123 @@ violoncelloNotes = \relative c {
 
   % Pleni…
   \bar "||" \mark \default
-  r2. r2. r2. r2. r2. r2. r2.
+  es4\p g, bes
+  as c es 
+  bes2 g4
+  bes2.
+  c4.\f bes8 as4 
+  bes2 d4
+  es2 r4
 
   % Hosanna…
   \mark \default
   \repeat volta 2 {
-    r2. r2. r2.
+    c\fff r r
+    bes r r 
+    as r r 
   }
   \alternative {
-    { r2. }
-    { r2. }
+    { bes r es }
+    { as, \tuplet 3/2 {bes8 bes bes} es4\fermata }
   }
 
   % Benedictus…
   \bar "||" \mark \default
-  r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. 
+  c4.\pp\< bes8 c d
+  es2 f4 
+  g2 es4
+  c2\f d4 
+  es2 d4\>
+  as'2 c,8 d 
+  es2\mf g,8 as 
+  bes2 as4\<
+  g \tuplet 3/2 {g'8 g g} f f\!
 
   % Hosanna…
   \mark \default
   \repeat volta 2 {
-    r2. r2. r2.
+    c4\fff r r
+    bes r r 
+    as r r 
   }
   \alternative {
-    { r2. }
-    { r2. }
+    { bes r es }
+    { as, \tuplet 3/2 {bes8 bes bes} es,4 }
   }
   \bar "|."
 }
 
 organRHNotes = \relative c' {
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2.
+  <<{es8_\markup{\box "II man."}^\markup{\column {" " "I man.: Pryncypał 8', Flet 8', Oktawa 4', Flet 2'" "II man.: Salicet 8', Flet 8', Flet 4'" "Ped.: Subbas 16', Oktawa 8'" }} f g bes as g} \\ {es2 c4}>>
+  f8 es d es f bes,
+  c d es as g f 
+  g_\markup{\box "I man."} as bes4 as8 bes 
+  c2 bes4
+  f8 g as4 g8 as
+  g f es g f d 
+  c d es d es f 
+
+  % Sanctus…
+  es4 <<es2 g>>
+  <<f2. d>>
+  <<{es2. es8 f g f es d}
+  \\{c8 bes c4 bes~bes2.}>>
+
+  es4 <<es2 g>>
+  <<f2. d>>
+  <<{es2. es8 f g f g as}
+  \\{c,8 bes c4 bes~bes2.}>>
 }
 
 organLHNotes = \relative c' {
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2.
+
+  s2.
+  bes2_\markup{\box "II man."} g4
+  as2  d4
+  es8 f es4 d8 es~ 
+  es2~es8 d~
+  d2 es4~
+  es8 d es4 d
+  <<c2 as>> <<bes4 d>>
+
+  % Sanctus…
+  g,4_\markup{\box "I man."} bes c
+  d c bes
+  as es f
+  as2.
+
+  g4 bes c
+  d c bes
+  as es f
+  as2.
+
 }
 
 organPedNotes = \relative c {
-  r2.
-  r2.
-  r2.
-  r2. r2. 
-  r2. r2. r2.
+  
+  r2. r2. r2. r2. r2. r2. r2.
+  as4 c bes
 
   % Sanctus…
   \bar "||" \mark \default
-  r2. r2. r2. r2. r2. r2. r2. r2. 
+  es2 c4
+  bes2 g4
+  as2 d4
+  es2.
+  es2 c4
+  bes2 g4
+  as2 d4
+  es2.
 
   % Pleni…
   \bar "||" \mark \default
-  r2. r2. r2. r2. r2. r2. r2.
+  es4 g, bes
+  as c es 
+  bes2 g4
+  bes2.
+  c4. bes8 as4 
+  bes2 d4
+  es2 r4
 
   % Hosanna…
   \mark \default
