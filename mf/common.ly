@@ -5,6 +5,8 @@
 #(set-global-staff-size 18.5)
 %#(set-global-staff-size 16.8)
 
+\pointAndClickOff
+
 \paper {
 
   paper-height = 29.7\cm
