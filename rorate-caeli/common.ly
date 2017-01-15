@@ -112,7 +112,8 @@
     \override StaffSymbol #'thickness = #0.8
     \override StaffSymbol #'ledger-line-thickness = #'(0.8 . 0.08)
     \override InstrumentName #'font-size = #-0.5
-    \numericTimeSignature
+    %\numericTimeSignature
+    \remove "Time_signature_engraver"
   }
 
   \context { \ChoirStaff

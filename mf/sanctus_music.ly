@@ -501,6 +501,43 @@ organRHNotes = \relative c' {
   <<f2. d>>
   <<{es2. es8 f g f g as}
   \\{c,8 bes c4 bes~bes2.}>>
+
+  % Pleni…
+  <<es8 g>> <<f as>> <<g4 bes>> <<f8 as>> <<g bes>>
+  <<{c d es d bes} \\ {as2 g4}>>
+  f8 g <<f4 as>> g8 as
+  <<{bes4 bes} \\ {bes8[ as] bes[ g]}>> <<as4 f>>
+  es8^\markup{\circle "+" Pryncypał 2'} <<d f>> <<g es>> <<d bes'>>
+  <<{as g f2.} \\ {es4~es d8 c d4}>>
+  es4 \tuplet 3/2 {es8 es es} <<es g>> <<es g>>
+
+  % Hosanna…
+  <<c4^\markup{\circle "+" Mikstura} g es c>> \tuplet 3/2 {<<c8 es g>> <<c, es g>> <<c, es g>> } <<d f as>> <<d, f as>>
+  <<bes4 f d>>  \tuplet 3/2 {<<bes'8 f d>> <<bes' f d>> <<bes' f d>>} <<as' f d>> <<as' f d>>
+  <<as'4 es c>> \tuplet 3/2 {<<as'8 es c>> <<as' es c>> <<as' es c>>} <<g' es c>> <<g' es c>>
+  <<as'4 f d>>  \tuplet 3/2 {<<as'8 f d>> <<as' f d>> <<as' f d>>}    <<bes' g es>> <<bes' g es>>
+  <<as4 es c>>  \tuplet 3/2 {<<d8 f>> <<d f>> <<d f>>}                  es4\fermata
+
+  % Benedictus…
+  c8^\markup{\column{\line{\circle "–" Mikstura} \line{\circle "–" Pryncypał 2'}}}_\markup{\box "II man."}
+  b <<{c d es f} \\ {c2}>>
+  <<{g'2.~g2} \\ {es8 d es f d4~d2}>>
+  <<es4_\markup{\box "I man."} g>>
+  <<{c~c8 bes g as bes c bes as bes4
+     as4.^\markup{\circle "+" Pryncypał 2'} bes8 as4
+     g4. as8 g4
+     f8 es d es f4 g}
+  \\{es2.
+     g2.~
+     g4 f8 es f4~
+     f es8 d es4~
+     es d8 c d4~d}>>
+  \tuplet 3/2 {<<b'8 d g>> <<b,8 d g>> <<b,8 d g>>} <<b g f d>> <<b' g f d>>
+  <<c'4^\markup{\circle "+" Mikstura} g es c>> \tuplet 3/2 {<<c8 es g>> <<c, es g>> <<c, es g>> } <<d f as>> <<d, f as>>
+  <<bes4 f d>>  \tuplet 3/2 {<<bes'8 f d>> <<bes' f d>> <<bes' f d>>} <<as' f d>> <<as' f d>>
+  <<as'4 es c>> \tuplet 3/2 {<<as'8 es c>> <<as' es c>> <<as' es c>>} <<g' es c>> <<g' es c>>
+  <<as'4 f d>>  \tuplet 3/2 {<<as'8 f d>> <<as' f d>> <<as' f d>>}    <<bes' g es>> <<bes' g es>>
+  <<as4 es c>> \ottava #1 \tuplet 3/2 {<<d8 f as bes d>> <<d, f as bes d>> <<d, f as bes d>>} <<es4 bes g f es>>
 }
 
 organLHNotes = \relative c' {
@@ -525,11 +562,28 @@ organLHNotes = \relative c' {
   as es f
   as2.
 
+  % Pleni…
+  <<{bes8 d es4 d8 es~es2~es8 d~
+     d2 es4~es8 d es4}
+  \\{bes2. as8 bes c as g4
+     bes2.~bes4 c}>> d
+  
+  R2.*11
+  as2. bes c bes~bes
+  <<b4 g>> \clef treble \tuplet 3/2 {<<b8 d g>> <<b,8 d g>> <<b,8 d g>>} <<b g f d>> <<b' g f d>>
+
+  % Hosanna…
+  <<g4 es c>> \tuplet 3/2 {<<c8 es g>> <<c, es g>> <<c, es g>> } <<d f as>> <<d, f as>>
+  <<bes4 f d>>  \tuplet 3/2 {<<bes'8 f d>> <<bes' f d>> <<bes' f d>>} <<bes' f d>> <<bes' f d>>
+  <<as'4 es c>> \tuplet 3/2 {<<as'8 es c>> <<as' es c>> <<as' es c>>} <<g' es c>> <<g' es c>>
+  <<bes'4 as f d>>  \tuplet 3/2 {<<bes'8 as f d>> <<bes' as f d>> <<bes' as f d>>} <<bes' g es>> <<bes' g es>>
+  <<as4 es c>> \tuplet 3/2 {<<bes8 d f as bes>> <<bes, d f as bes>> <<bes, d f as bes>>} <<bes4 g es bes>>
+
 }
 
 organPedNotes = \relative c {
   
-  r2. r2. r2. r2. r2. r2. r2.
+  s2.*7
   as4 c bes
 
   % Sanctus…
@@ -556,27 +610,36 @@ organPedNotes = \relative c {
   % Hosanna…
   \mark \default
   \repeat volta 2 {
-    r2. r2. r2.
+    c r r
+    bes r r 
+    as r r 
   }
   \alternative {
-    { r2. }
-    { r2. }
+    { bes r es }
+    { as, bes es\fermata }
   }
 
   % Benedictus…
   \bar "||" \mark \default
-  r2. r2. 
-  r2. r2. r2. r2. r2. 
-  r2. r2. 
+  s2.*2
+  s2 es4
+  c2 d4 
+  es2 d4
+  as'2 c,8 d 
+  es2 g,8 as 
+  bes2 as4
+  g g' f
 
   % Hosanna…
   \mark \default
   \repeat volta 2 {
-    r2. r2. r2.
+    <<c4 c'>> r r
+    <<bes bes,>> r r 
+    <<as as'>> r r 
   }
   \alternative {
-    { r2. }
-    { r2. }
+    { <<bes bes,>> r es }
+    { as, bes <<es es,>> }
   }
   \bar "|."
 }
