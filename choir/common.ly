@@ -22,14 +22,14 @@
   last-bottom-spacing #'basic-distance = #7
   last-bottom-spacing #'padding = #2.5
 
-  #(define fonts
+ #(define fonts
     (make-pango-font-tree
-      "Neuton"
-      "Ubuntu"
-      "Luxi Mono"
-       (/ staff-height pt 20)))
+      "Alegreya"
+      "Alegreya"
+      "Alegreya"
+      (/ staff-height pt 20)))
 
-  %print-first-page-number = ##t
+ %print-first-page-number = ##t
   %first-page-number = 3
 
 
@@ -53,7 +53,7 @@
       \override #'(baseline-skip . 3.5)
       \column {
         \fill-line {
-          \fontsize #8 \override #'(font-name . "Neuton Light")
+	  \fontsize #8
           \fromproperty #'header:title
         }
         \fill-line {
