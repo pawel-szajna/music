@@ -2,8 +2,8 @@
 % Based on a choral template by Samuel Speer
 % http://samuelspeer.com/blog/2014/choral-scores-vii/
 
-#(set-global-staff-size 18.5)
-%#(set-global-staff-size 16.8)
+%#(set-global-staff-size 18.5)
+#(set-global-staff-size 15.3)
 
 \paper {
 
@@ -21,13 +21,13 @@
   top-markup-spacing #'padding = #5
   last-bottom-spacing #'basic-distance = #7
   last-bottom-spacing #'padding = #2.5
-
- #(define fonts
-    (make-pango-font-tree
-      "Alegreya"
-      "Alegreya"
-      "Alegreya"
-      (/ staff-height pt 20)))
+ragged-last-bottom = ##f
+% #(define fonts
+%    (make-pango-font-tree
+%      "Alegreya"
+%      "Alegreya"
+%      "Alegreya"
+%      (/ staff-height pt 20)))
 
  %print-first-page-number = ##t
   %first-page-number = 3
