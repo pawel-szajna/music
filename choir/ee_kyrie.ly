@@ -13,7 +13,6 @@
 
 \header {
   title = "Kyrie"
-  composer = "Paweł Szajna"
 }
 
 sopNotes = \relative c'' {
@@ -170,7 +169,7 @@ lyricsA = \lyricmode {
   Chri -- ste e -- le -- i son,
   Chri -- ste e -- le -- i son,
   Ky -- ri -- e e -- le -- i -- son,
-  Ky -- ri -- e e -- le -- i -- son
+  Ky -- ri -- e e -- le -- i -- son.
 }
 
 \score {

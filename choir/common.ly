@@ -22,12 +22,12 @@
   last-bottom-spacing #'basic-distance = #7
   last-bottom-spacing #'padding = #2.5
 ragged-last-bottom = ##f
-% #(define fonts
-%    (make-pango-font-tree
-%      "Alegreya"
-%      "Alegreya"
-%      "Alegreya"
-%      (/ staff-height pt 20)))
+ #(define fonts
+    (make-pango-font-tree
+      "Alegreya"
+      "Alegreya"
+      "Alegreya"
+      (/ staff-height pt 20)))
 
  %print-first-page-number = ##t
   %first-page-number = 3
