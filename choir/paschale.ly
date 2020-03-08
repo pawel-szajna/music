@@ -73,7 +73,7 @@ rejoiceT = \relative c' {
   
   ges1 \mp                  % a-
   \tuplet 3/2 {es4( f) ges} % -round god's
-  es2 \>(~es des f es1\ppp\fermata) % throne
+  es2 \>(~es d~d es1\ppp\fermata) % throne
 }
 
 rejoiceB = \relative c' {
