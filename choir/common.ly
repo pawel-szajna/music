@@ -3,7 +3,7 @@
 % http://samuelspeer.com/blog/2014/choral-scores-vii/
 
 %#(set-global-staff-size 18.5)
-#(set-global-staff-size 15.3)
+#(set-global-staff-size 15.5)
 
 \paper {
 
