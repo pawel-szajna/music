@@ -57,7 +57,7 @@ ragged-last-bottom = ##f
           \fromproperty #'header:title
         }
         \fill-line {
-          \large \bold
+          \fontsize #4 \bold
           \fromproperty #'header:subtitle
         }
         \fill-line {
@@ -74,6 +74,10 @@ ragged-last-bottom = ##f
         \fill-line {
           \smaller \fromproperty #'header:poetyear
           \smaller \fromproperty #'header:composeryear
+        }
+        \fill-line {
+          \fromproperty #'header:opus
+          \fromproperty #'header:arranger
         }
       }
     }

@@ -1,13 +1,6 @@
 \version "2.18.2"
 
-\include "../common.ly"
-
-\header {
-  title = "暁の鎮魂歌"
-  subtitle = "Akatsuki no Requiem"
-}
-
-sopNotes = \relative c' {
+anrsopNotes = \relative c' {
 
 \autoBeamOff
 \key a \major
@@ -92,7 +85,7 @@ r8 e-. d4-. r2
 
 }
 
-altNotes = \relative c' {
+anraltNotes = \relative c' {
 
 \autoBeamOff
 \key a \major
@@ -165,7 +158,7 @@ e( fis e d)
 
 }
 
-tenNotes = \relative c' {
+anrtenNotes = \relative c' {
 
 \autoBeamOff
 \key a \major
@@ -232,7 +225,7 @@ b( d c a)
 
 }
 
-basNotes = \relative c {
+anrbasNotes = \relative c {
 
 \autoBeamOff
 \key a \major
@@ -302,7 +295,7 @@ g( a g fis)
 }
 
 
-lyricsS = \lyricmode {
+anrlyricsS = \lyricmode {
 
 Da -- i -- chi to ō -- zo -- ra wa na -- ze wa -- ka -- re -- ta no -- da -- ro -- u.
 Se -- ka -- i wa za -- n -- ko -- ku -- de sa -- re -- do u -- tsu -- ku -- shi -- i.
@@ -323,7 +316,7 @@ Na na na na…
 
 }
 
-lyricsA = \lyricmode {
+anrlyricsA = \lyricmode {
 
 Mmm…
 Aaa…
@@ -346,7 +339,7 @@ Mmm…
 
 }
 
-lyricsT = \lyricmode {
+anrlyricsT = \lyricmode {
 
 Mmm…
 Aaa…
@@ -374,25 +367,31 @@ Mmm…
   <<
     \new ChoirStaff <<
       \new Voice = Sop { 
-        \set Staff.instrumentName = "Sopran"
-        \sopNotes }
-        \new Lyrics \lyricsto "Sop" \lyricsS
+        \set Staff.instrumentName = "Soprano"
+        \anrsopNotes }
+        \new Lyrics \lyricsto "Sop" \anrlyricsS
       \new Voice = Alt {
-        \set Staff.instrumentName = "Alt"
-        \altNotes }
-        \new Lyrics \lyricsto "Alt" \lyricsA
+        \set Staff.instrumentName = "Alto"
+        \anraltNotes }
+        \new Lyrics \lyricsto "Alt" \anrlyricsA
       \new Voice = Ten {
         \set Staff.instrumentName = "Tenor"
         \clef "treble_8"
-        \tenNotes }
-        \new Lyrics \lyricsto "Ten" \lyricsT
+        \anrtenNotes }
+        \new Lyrics \lyricsto "Ten" \anrlyricsT
       \new Voice = Bas {
-        \set Staff.instrumentName = "Bas"
+        \set Staff.instrumentName = "Bass"
         \clef bass
-        \basNotes }
-        \new Lyrics \lyricsto "Bas" \lyricsT
+        \anrbasNotes }
+        \new Lyrics \lyricsto "Bas" \anrlyricsT
     >>
   >>
+
+  \header {
+    title = "暁の鎮魂歌"
+    subtitle = "Akatsuki no Requiem"
+    subsubtitle = "Shingeki no Kyojin Season 3-1 ED"
+  }
 
   \layout { }
 

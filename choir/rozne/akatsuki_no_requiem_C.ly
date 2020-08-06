@@ -310,7 +310,7 @@ Se -- ka -- i wa za -- n -- ko -- ku -- de sa -- re -- do u -- tsu -- ku -- shi 
 I -- shi o na -- ge -- ru mo -- no to na -- ge ra -- re -- ru mo -- no ni wa
 yō -- i ni ko -- e ra -- re -- nu sa -- ku ga a -- ru.
 Ta -- chi i -- chi ga ka -- wa -- re -- ba se -- i -- gi wa ki -- ba o mu -- ku
-o -- ri no na -- ka de ho -- e -- te i -- ru no wa ha -- ta -- shi -- te do -- chi -- ra ka?
+o -- ri no na -- ka de ho -- e -- te i -- ru no wa wa -- ta -- shi -- te do -- chi -- ra ka?
 
 Shin -- zō wo sa -- sa -- ge -- ta mo -- do -- se -- na -- i ta -- so -- ga -- re ni
 su -- su -- mi tsu -- dzu -- ke -- ta yo -- ru -- no -- ha -- te ra -- ku -- en wa do -- ko ni a -- ru?
@@ -375,21 +375,21 @@ Mmm…
     \new ChoirStaff <<
       \new Voice = Sop { 
         \set Staff.instrumentName = "Sopran"
-        \sopNotes }
+        \transpose a c' { \sopNotes } }
         \new Lyrics \lyricsto "Sop" \lyricsS
       \new Voice = Alt {
         \set Staff.instrumentName = "Alt"
-        \altNotes }
+        \transpose a c' {\altNotes } }
         \new Lyrics \lyricsto "Alt" \lyricsA
       \new Voice = Ten {
         \set Staff.instrumentName = "Tenor"
         \clef "treble_8"
-        \tenNotes }
+        \transpose a c' {\tenNotes } }
         \new Lyrics \lyricsto "Ten" \lyricsT
       \new Voice = Bas {
         \set Staff.instrumentName = "Bas"
         \clef bass
-        \basNotes }
+        \transpose a c' {\basNotes } }
         \new Lyrics \lyricsto "Bas" \lyricsT
     >>
   >>
